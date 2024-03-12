@@ -1,2 +1,2 @@
-# javascript-project
-All my JavaScript projects here
+# javascript-projects
+All my javascript project in one repository
