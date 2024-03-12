@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --border-standard: 1px solid grey;
+    --transition-2s: 0.2s all ease;
+    --box-shadow: 1px 1px 7px #a1a1a1;
+
+
+    /* colors */
+    --color-grey: #ebebeb;
+    --color-light-black: #3a3a3a;
+    --color-red: #a70303;
+    --color-danger: #8d1604;
+    --color-green: #049e19;
+    /* --color-dark-blue: #064cce; */
+    --color-darker-blue: #01389e;
+    --color-blue: #0161fc;
+    --color-dark-blue: #024abe;
+    --color-blue-2: #295db3;
+    --color-dark-blue-2: #214b8d;
+    --color-dark-blue-3: #001e4d;
+
+}
+
+body {
+    background-color: #3a3a3a;
+}
+
+.app {
+    background-color: white;
+    padding: 25px;
+    margin: 100px auto 0;
+    max-width: 600px;
+    width: 90%;
+    border-radius: 10px;
+    box-shadow: 2px 1px 10px black;
+}
+
+.heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: var(--border-standard);
+    padding: 0px 2px;
+}
+
+.head {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0px 2px;
+    width: 50%;
+    height: 80px;
+}
+
+img {
+    width: 60px;
+}
+
+.header {
+    height: 80%;
+}
+
+h1 {
+    font-size: 35px;
+    font-weight: 600;
+    color: #191919;
+    padding-bottom: 25px;
+}
+
+.questionNumber {
+    font-size: 25px;
+    font-weight: 900;
+    color: #474747;
+}
+
+#quiz {
+    padding: 20px 0;
+}
+
+#question {
+    color: #474747;
+}
+
+#quiz h2 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.btn {
+    width: 100%;
+    background-color: #ffffff;
+    color: #222222;
+    border: 1px solid #222222;
+    margin: 10px 0px;
+    padding: 10px 15px;
+    text-align: left;
+    border-radius: 4px;
+    transition: .2s;
+    cursor: pointer;
+}
+
+.btn:hover:not([disabled]) {
+    background-color: #222222;
+    color: #ffffff;
+}
+
+.btn:disabled {
+    cursor: no-drop;
+}
+
+.next-btn-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#next-btn {
+    background-color: #01389e;
+    color: #ffffff;
+    font-weight: 500;
+    width: 150px;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    margin: 10px 0 20px;
+    display: none;
+    cursor: pointer;
+}
+
+.correct {
+    background: #23e99d;
+}
+
+.incorrect {
+    background: #ff8787;
+}
