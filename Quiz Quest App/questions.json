@@ -1,12 +1,12 @@
 [
 
     {
-        "question": "Which animal lays eggs?",
+        "question": "Which planet has the most moons?",
         "answers": [
-            { "text": "Duck", "correct": true },
-            { "text": "Cat", "correct": false },
-            { "text": "Dog", "correct": false },
-            { "text": "Goat", "correct": false }
+            { "text": "Jupiter", "correct": false },
+            { "text": "Uranus", "correct": false },
+            { "text": "Saturn", "correct": true },
+            { "text": "Neptune", "correct": false }
         ]
     },
 
@@ -31,12 +31,12 @@
     },
 
     {
-        "question": "How many seconds make one hour?",
+        "question": "How many minutes are in a full week?",
         "answers": [
-            { "text": "4000 seconds", "correct": false },
-            { "text": "3200 seconds", "correct": false },
-            { "text": "3000 seconds", "correct": false },
-            { "text": "3600 seconds", "correct": true }
+            { "text": "7,000 minutes", "correct": false },
+            { "text": "10,080 minutes", "correct": true },
+            { "text": "604,800 minutes", "correct": false },
+            { "text": "11,520 minutes", "correct": false }
         ]
     },
 
@@ -61,12 +61,12 @@
     },
 
     {
-        "question": "In which Indian state is the place where the Dandi Salt March took place today?",
+        "question": "The Mughal Empire reached its peak under the rule of which emperor? ",
         "answers": [
-            { "text": "Karnataka", "correct": false },
-            { "text": "Kolkata", "correct": false },
-            { "text": "Maharashtra", "correct": false },
-            { "text": "Gujarat", "correct": true }
+            { "text": "Babur", "correct": false },
+            { "text": "Aurangzeb", "correct": false },
+            { "text": "Shah Jahan", "correct": false },
+            { "text": "Akbar ", "correct": true }
         ]
     },
 
@@ -98,7 +98,26 @@
             { "text": "National Aeronautics and Scientific Agency", "correct": false },
             { "text": "National Aeronautics and Space Administration", "correct": true }
         ]
-    }
+    },
 
+    {
+        "question": "How many times does the digit 9 occur between 1 to 100?",
+        "answers": [
+            { "text": "11", "correct": false },
+            { "text": "21", "correct": true },
+            { "text": "20", "correct": false },
+            { "text": "10", "correct": false }
+        ]
+    },
+
+    {
+        "question": "In which of the following countries is the Harappan site located?",
+        "answers": [
+            { "text": "India", "correct": false },
+            { "text": "Afghanistan", "correct": false },
+            { "text": "Pakistan", "correct": true },
+            { "text": "None of the above", "correct": false }
+        ]
+    }
 
 ]

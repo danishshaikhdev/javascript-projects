@@ -50,17 +50,11 @@ function showQuestions() {
 
 function selectAns(e) {
     const selectedBtn = e.target;
-    const isCorrect = selectedBtn.dataset.correct === 'true';
-    if(isCorrect) {
-        selectedBtn.classList.add('correct');
-        score++;
-    }
-    else {
-        selectedBtn.classList.add('incorrect');
-    }
+    
+    selectedBtn.classList.add('selected');
     Array.from(answerBtns.children).forEach(button => {
-        if(button.dataset.correct === 'true') {
-            button.classList.add('correct');
+        if(button.dataset.correct === 'true' && selectedBtn.dataset.correct === 'true') {
+            score++;
         }
         button.disabled = true;
     })
@@ -70,8 +64,9 @@ function selectAns(e) {
 
 function showScore() {
     resetState();
+    const questionLen = questions.length;
     questionElement.innerHTML = `your scored ${score} out of ${questions.length}`;
-    score < 5 ? questionElement.style.color = "#c41a00" : questionElement.style.color = "#049e19";
+    score <= questionLen/2 ? questionElement.style.color = "#c41a00" : questionElement.style.color = "#049e19";
     nextBtn.innerHTML = 'Play Again';
     nextBtn.style.display = 'block';
 }

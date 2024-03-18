@@ -136,10 +136,7 @@ h1 {
     cursor: pointer;
 }
 
-.correct {
-    background: #23e99d;
-}
-
-.incorrect {
-    background: #ff8787;
+.selected {
+    background: #01389eca;
+    color: white;
 }
