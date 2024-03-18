@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --color-background: #759e02;
+    --color-head1: #508d01;
+    --color-head2: #476f0e;
+    --color-body1: #74cd00;
+    --color-body2: #87ec02;
+    --color-food1: #be0000;
+    --color-food2: #750303;
+    --color-black: #111111;
+    --box-shadow: 2px 1px 10px grey;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.background {
+    background: linear-gradient(#e8e8e8, #acacac);
+    min-height: 100vh;
+    min-width: 100vw;
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+}
+
+
+h1 {
+    margin: 0;
+    font-size: 2em;
+    text-align: center;
+}
+
+.board-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+#board {
+    background-color: #1d1d1d;
+    border: 3px solid var(--color-black);
+    width: 90vmin;
+    height: 92vmin;
+    border-radius: 2px;
+    display: grid;
+    grid-template-rows: repeat(24, 1fr);
+    grid-template-columns: repeat(24, 1fr);
+    box-shadow: var(--box-shadow);
+
+}
+
+.head {
+    background: linear-gradient(var(--color-head1), var(--color-head2));
+    transition: .4s;
+}
+
+.body {
+    background-color: var(--color-body1);
+    transition: .4s;
+}
+
+.food {
+    background: linear-gradient(var(--color-food1), var(--color-food2));
+}
+
+.scoresBox {
+    position: absolute;
+    top: 40px;
+    right: 130px;
+    width: 15vw;
+    height: 15vh;
+}
+
+#scoreBox {
+    position: relative;
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+#highScoreBox {
+    position: relative;
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+.speed-div{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 70px;
+    left: 90px;
+    width: 15vw;
+    height: 10vh;
+    padding: 10px;
+}
+
+#speedBox {
+    font-size: 2em;
+    font-weight: 600;
+}
+
+
+.buttons-div {
+    position: absolute;
+    top: 160px;
+    left: 50px;
+    width: 20vw;
+    height: 22vh;
+    padding: 10px;
+}
+
+#speedBtn {
+    font-size: 1.4em;
+    font-weight: 600;
+    position: relative;
+    width: 100%;
+    padding: 10px;
+    cursor: pointer;
+    transition: .4s;
+    background: none;
+    margin: 10px 0px;
+    box-shadow: var(--box-shadow);
+}
+
+#speedBtn:hover {
+    text-shadow: 1px 1px #000000;
+}
+
+
+
+#resetBtn {
+    font-size: 1.4em;
+    font-weight: 600;
+    position: relative;
+    width: 100%;
+    padding: 10px;
+    cursor: pointer;
+    transition: .4s;
+    background: none;
+    margin: 10px 0px;
+    box-shadow: var(--box-shadow);
+}
+
+#resetBtn:hover {
+    text-shadow: 1px 1px #000000;
+}
+
+
