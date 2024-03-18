@@ -65,7 +65,7 @@ function selectAns(e) {
 function showScore() {
     resetState();
     const questionLen = questions.length;
-    questionElement.innerHTML = `your scored ${score} out of ${questions.length}`;
+    questionElement.innerHTML = `your scored ${Math.round(score/questionLen * 100).toFixed(2)}%`;
     score <= questionLen/2 ? questionElement.style.color = "#c41a00" : questionElement.style.color = "#049e19";
     nextBtn.innerHTML = 'Play Again';
     nextBtn.style.display = 'block';
