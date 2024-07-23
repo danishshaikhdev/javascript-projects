@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    transition: 0.2s all ease;
+}
+:root {
+    --standard-border: 1px solid black;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #ebebeb;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-div {
+    height: auto;
+    background-color: white;
+    box-shadow: 1px 5px 20px #6c6c6c;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 40px;
+}
+
+.music-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.title {
+    margin-top: 10px;
+    font-size: 2.3rem;
+    color: #222222;
+    cursor: pointer;
+}
+
+.title:hover {
+    text-shadow: 1px 1px 10px #565656;   
+}
+
+.artist {
+    font-size: 1.5rem;
+    color: grey;
+    text-shadow: 1px 1px 10px #b3b3b3;
+}
+
+.img-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 16rem;
+    height: 16rem;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 20px 0px;
+    box-shadow: 1px 1px 20px #5d5d5d;
+}
+
+.img-container img{
+    width: 100%;
+}
+
+.controls {
+    display: flex;
+    width: 60%;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0 20px 0;
+}
+
+.controls .fa-play, .controls .fa-pause{
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+}
+
+.controls .fas{
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+
+.fa-backward:hover, .fa-forward:hover{
+    color: #565656;
+    text-shadow: 1px 1px 10px #1e1e1e;
+}
+
+.anime {
+    animation: rotatePlayer 3s linear infinite;
+}
+
+@keyframes rotatePlayer {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
